@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Element.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2acdcce8_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2acdcce8_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.aor.spaceship.model.game.elements;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2acdcce8_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2acdcce8_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2acdcce8_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2acdcce8_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.aor.spaceship.model.Position;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2acdcce8_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2acdcce8_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2acdcce8_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2acdcce8_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class Element {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2acdcce8_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2acdcce8_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private Position position;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2acdcce8_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2acdcce8_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public Element(int x, int y) { this.position = new Position(x, y); }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2acdcce8_8'/>
+8
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2acdcce8_8'>1</a>
+<span>
+1. getPosition : replaced return value with null for com/aor/spaceship/model/game/elements/Element::getPosition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    public Position getPosition() { return this.position; }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2acdcce8_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2acdcce8_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public void setPosition(Position position) { this.position = position; }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2acdcce8_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2acdcce8_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2acdcce8_8'>8</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2acdcce8_8'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getPosition<br/><b>Killed by : </b>com.aor.spaceship.model.EnemyTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.EnemyTest]/[method:specialEnemyPosition()]</span></span> replaced return value with null for com/aor/spaceship/model/game/elements/Element::getPosition &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+<li class='mutator'>EMPTY_RETURNS</li>
+<li class='mutator'>FALSE_RETURNS</li>
+<li class='mutator'>INCREMENTS</li>
+<li class='mutator'>INVERT_NEGS</li>
+<li class='mutator'>MATH</li>
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+<li class='mutator'>NULL_RETURNS</li>
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+<li class='mutator'>TRUE_RETURNS</li>
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.aor.spaceship.model.EnemyTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.EnemyTest]/[method:specialEnemyPosition()] (0 ms)</li><li>com.aor.spaceship.model.SpaceshipTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.SpaceshipTest]/[method:spaceshipPosition()] (0 ms)</li><li>com.aor.spaceship.model.EnemyTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.EnemyTest]/[method:defaultEnemyPosition()] (0 ms)</li><li>com.aor.spaceship.model.MeteorTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.MeteorTest]/[method:meteorPosition()] (0 ms)</li><li>com.aor.spaceship.model.PowerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.PowerTest]/[method:powerPosition()] (0 ms)</li><li>com.aor.spaceship.model.LimitTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.LimitTest]/[method:limitPosition()] (0 ms)</li><li>com.aor.spaceship.model.EnemyShotTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.EnemyShotTest]/[method:enemyShotPosition()] (0 ms)</li><li>com.aor.spaceship.model.BulletTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.BulletTest]/[method:bulletPosition()] (0 ms)</li><li>com.aor.spaceship.model.ElementTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.ElementTest]/[method:elementPosition()] (0 ms)</li><li>com.aor.spaceship.model.PositionTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.PositionTest]/[method:testElement()] (0 ms)</li><li>com.aor.spaceship.model.SpaceshipShotsTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.SpaceshipShotsTest]/[method:positionTripleShot()] (0 ms)</li><li>com.aor.spaceship.viewer.EnemyShotViewerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.viewer.EnemyShotViewerTest]/[method:testDraw()] (0 ms)</li><li>com.aor.spaceship.viewer.LimitViewerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.viewer.LimitViewerTest]/[method:drawElement()] (0 ms)</li><li>com.aor.spaceship.viewer.DefaultShotViewerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.viewer.DefaultShotViewerTest]/[method:drawElement()] (0 ms)</li><li>com.aor.spaceship.viewer.SpaceshipViewerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.viewer.SpaceshipViewerTest]/[method:drawElement()] (0 ms)</li><li>com.aor.spaceship.viewer.SpecialEnemyViewerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.viewer.SpecialEnemyViewerTest]/[method:drawElement()] (0 ms)</li><li>com.aor.spaceship.model.SpaceshipShotsTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.SpaceshipShotsTest]/[method:positionDoubleShot()] (0 ms)</li><li>com.aor.spaceship.viewer.DoubleShotViewerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.viewer.DoubleShotViewerTest]/[method:drawElement()] (0 ms)</li><li>com.aor.spaceship.viewer.PowerViewerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.viewer.PowerViewerTest]/[method:drawElement()] (0 ms)</li><li>com.aor.spaceship.viewer.DefaultEnemyViewerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.viewer.DefaultEnemyViewerTest]/[method:drawElement()] (0 ms)</li><li>com.aor.spaceship.viewer.TripleShotViewerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.viewer.TripleShotViewerTest]/[method:drawElement()] (0 ms)</li><li>com.aor.spaceship.model.SpaceshipShotsTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.SpaceshipShotsTest]/[method:positionDefaultShot()] (0 ms)</li><li>com.aor.spaceship.model.BulletTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.BulletTest]/[method:bulletUp()] (0 ms)</li><li>com.aor.spaceship.viewer.BurstShotViewerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.viewer.BurstShotViewerTest]/[method:drawElement()] (0 ms)</li><li>com.aor.spaceship.viewer.MeteorViewerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.viewer.MeteorViewerTest]/[method:drawElement()] (0 ms)</li><li>com.aor.spaceship.model.SpaceshipShotsTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.SpaceshipShotsTest]/[method:positionBurstShot()] (0 ms)</li><li>com.aor.spaceship.model.BulletTest.[engine:junit-jupiter]/[class:com.aor.spaceship.model.BulletTest]/[method:bulletDown()] (0 ms)</li><li>com.aor.spaceship.controller.SpecialEnemyControllerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.controller.SpecialEnemyControllerTest]/[method:moveSpecialEnemy()] (0 ms)</li><li>com.aor.spaceship.controller.DefaultEnemyControllerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.controller.DefaultEnemyControllerTest]/[method:moveDefaultEnemy()] (8 ms)</li><li>com.aor.spaceship.controller.SpaceshipControllerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.controller.SpaceshipControllerTest]/[method:moveSpaceshipDown()] (0 ms)</li><li>com.aor.spaceship.controller.SpaceshipControllerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.controller.SpaceshipControllerTest]/[method:moveSpaceshipLeft()] (0 ms)</li><li>com.aor.spaceship.controller.SpaceshipControllerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.controller.SpaceshipControllerTest]/[method:moveSpaceshipRight()] (0 ms)</li><li>com.aor.spaceship.controller.SpaceshipControllerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.controller.SpaceshipControllerTest]/[method:moveSpaceshipUp()] (0 ms)</li><li>com.aor.spaceship.controller.EnemyShootingControllerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.controller.EnemyShootingControllerTest]/[method:addShot()] (0 ms)</li><li>com.aor.spaceship.states.MenuStateTest.[engine:junit-jupiter]/[class:com.aor.spaceship.states.MenuStateTest]/[method:selectStart()] (0 ms)</li><li>com.aor.spaceship.states.DefeatMenuStateTest.[engine:junit-jupiter]/[class:com.aor.spaceship.states.DefeatMenuStateTest]/[method:selectRematch()] (0 ms)</li><li>com.aor.spaceship.controller.ShootingControllerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.controller.ShootingControllerTest]/[method:addShots()] (0 ms)</li><li>com.aor.spaceship.controller.EnemyShootingControllerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.controller.EnemyShootingControllerTest]/[method:cleanShots()] (0 ms)</li><li>com.aor.spaceship.controller.ShootingControllerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.controller.ShootingControllerTest]/[method:moveBurstShots()] (0 ms)</li><li>com.aor.spaceship.controller.ShootingControllerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.controller.ShootingControllerTest]/[method:moveDefaultShots()] (0 ms)</li><li>com.aor.spaceship.controller.ShootingControllerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.controller.ShootingControllerTest]/[method:moveDoubleShots()] (0 ms)</li><li>com.aor.spaceship.controller.EnemyShootingControllerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.controller.EnemyShootingControllerTest]/[method:moveEnemyShots()] (0 ms)</li><li>com.aor.spaceship.controller.EnemyShootingControllerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.controller.EnemyShootingControllerTest]/[method:hitMeteor()] (0 ms)</li><li>com.aor.spaceship.controller.ShootingControllerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.controller.ShootingControllerTest]/[method:moveTripleShots()] (0 ms)</li><li>com.aor.spaceship.states.InitialStateTest.[engine:junit-jupiter]/[class:com.aor.spaceship.states.InitialStateTest]/[method:selectCoin()] (6 ms)</li><li>com.aor.spaceship.controller.EnemyShootingControllerTest.[engine:junit-jupiter]/[class:com.aor.spaceship.controller.EnemyShootingControllerTest]/[method:hitSpaceShip()] (0 ms)</li><li>com.aor.spaceship.states.GameStateTest.[engine:junit-jupiter]/[class:com.aor.spaceship.states.GameStateTest]/[method:startGame()] (7 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.15.0
+
+</body>
+</html>
